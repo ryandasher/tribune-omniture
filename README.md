@@ -1,4 +1,4 @@
-# Tribune Publish Omniture plugin
+# Tribune Publishing Omniture plugin
 
 This is a simple plugin used for configuring Omniture metrics on Tribune publishing WordPress sites.
 
