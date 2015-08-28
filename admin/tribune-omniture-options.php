@@ -19,7 +19,7 @@ $tribune_omniture_fields = array(
     array(
         'Field Label' => 'Project Name',
         'Field Name' => 'tribune_omniture_project_name',
-        'Description' => 'Enter an identifying name for your project.'
+        'Description' => 'Enter an identifying name for your project (e.g. - Bob\'s Sweet Blog, Election Center blog, etc.).'
     ),
     array(
         'Field Label' => 'Project Domain',
@@ -29,7 +29,7 @@ $tribune_omniture_fields = array(
     array(
         'Field Label' => 'Project Type',
         'Field Name' => 'tribune_omniture_project_type',
-        'Description' => 'Enter an Omniture project type (e.g. - articleproject, dataproject, etc.).'
+        'Description' => 'Enter an Omniture project type (e.g. - articleproject, dataproject, individualarticle, individualgraphic, landingpage, photogalleryproject, 3rdparty).'
     ),
     array(
         'Field Label' => 'Section Path',
