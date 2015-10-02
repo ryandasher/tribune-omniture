@@ -50,9 +50,23 @@ class TribuneOmniture {
     public function render_omniture_script() {
         // Output the HTML of the Omniture third party script.
         $property_name = get_option('tribune_omniture_property_name');
-        
+
+        if (get_option('tribune_omniture_enable_navigation') == 1) {
+          $nav_disabled = 'false';
+        } else {
+          $nav_disabled = 'true';
+        }
+
+        if (get_option('tribune_omniture_enable_ssor') == 1) {
+          $ssor_disabled = 'false';
+        } else {
+          $ssor_disabled = 'true';
+        }
+
         $omniture_script = '//' . $property_name
-            . '.com/thirdpartyservice?disablenav=true&disablessor=true';
+            . '.com/thirdpartyservice?disablenav=' . $nav_disabled
+            . '&disablessor=' . $ssor_disabled;
+
         wp_enqueue_script('omniture-script',
                           $omniture_script,
                           array(),
